@@ -1,0 +1,90 @@
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background: #ffffff;
+}
+
+.container{
+    height: 475px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 10px;
+    background: url(painting.png);
+    background-repeat: no-repeat;
+    border: 1px solid #ffffff;
+    border-radius: 30px; 
+}
+
+.title{
+    padding: 40px 0 20px 0;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2a3454;
+}
+
+.question{
+    height: 30px;
+    padding: 25px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #ffffff;
+    border-color: #2a3454;
+    border-radius: 40px;
+    margin: 0 10px 0 10px;
+    color: #2a3454;
+}
+
+.option{
+    width: 370px;
+    padding: 10px 0 10px 10px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #2a3454;
+    border-radius: 30px;
+    margin: 10px 0 0 10px;
+    color: #2a3454;)
+}
+
+.option:hover{
+    background: #ff2150;
+    color: #2a3454;
+}
+
+.next-btn{
+    height: 35px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #2a3454;
+    border-radius: 30px;
+    margin: 10px;
+    color: #2a3454;
+    float: right;
+    cursor: pointer;
+} 
+
+.next-btn:hover{
+    background: #ff2150;
+    color: #2a3454;
+}
+
+.result{
+    height: 70px;
+    padding-top: 15px;
+    font-size: 50px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: #2a3454;
+    border-radius: 40px;
+    color: #2a3454;
+}
+
+.option input: checked.option{
+    background: #000000;
+    color: #2a3454;
+}
