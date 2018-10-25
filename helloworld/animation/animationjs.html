@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<style>
+  #container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-image: url("sea.png");
+  }
+
+  #animation {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: 175px;
+    background-image: url("sailboat.png");
+  }
+</style>
+
+<body>
+
+
+
+  <div id="container">
+    <div id="animation"></div>
+  </div>
+
+  <script>
+    function myMove() {
+      var elem = document.getElementById("animation");
+      var pos = 0;
+      var id = setInterval(frame, 80);
+      function frame() {
+        if (pos == 350) {
+          clearInterval(id);
+        } 
+        else {
+          pos++;
+          /*elem.style.top = pos + 'px';*/
+          elem.style.left = pos + 'px';
+        }
+      }
+    }
+  </script>
+
+  <p>
+    <button onclick="myMove()">Run</button>
+  </p>
+
+
+
+</body>
+
+</html>
